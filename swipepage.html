@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             .flex-container {
                 display: flex;
@@ -49,17 +53,6 @@
                 flex-direction: row;
                 display: flex;
             }
-            .category-button{
-                border-radius: 30px;
-                border-width: 1px;
-                border-color: #F86400;
-                background-color: white;
-                margin-right: 15px;
-                padding-left: 5px;
-                padding-right: 5px;
-                border-style: solid;
-
-            }
             .title{
                 font-size: 20px;
                 font-weight: bold;
@@ -89,14 +82,15 @@
                 justify-content: space-between;
                 padding: 20px;
             }
-            .button{
-                border-radius: 20px;
-                background-color: #F86400;
-                padding-right: 10px;
-                padding-left: 10px;
+            .textButton{
+                background-color: #F86400 !important;
+                border-color: #F86400 !important;
             }
-            .button-text{
-                color: white;
+            .chosenCategory{
+                background-color: #FFF !important;
+                border-color: #F86400 !important;
+                border-radius: 2px;
+                color: #000 !important;
             }
             a:link {
             text-decoration: none;
@@ -116,17 +110,21 @@
 
         </style>
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <title>Swipe Page</title>
+
     </head>
 
-    <body>
+    <body style="font-family: Helvetica">
         <div class ="outer-container">
             <div class="flex-container">
                 <div class="container">
                     <div class="match-unmatch">
-                        <div class="button">
-                            <a href = #><p class="button-text">unmatch</p></a>
+                        <div>
+                            <a href = #><p class="btn btn-primary textButton">Pass</p></a>
                         </div>
-                        <div class="button"><a href = #><p class="button-text">match</p></a></div>
+                        <div><a href="matchSuccess.html"><p class="btn btn-primary textButton">Like</p></a></div>
                     </div>
                     <div class="image-container"></div>      
                     <div class="description">
@@ -138,8 +136,12 @@
                     <div class="description">
                         <div><p class="title">Category</p></div>
                         <div class="category">
-                            <div class="category-button"><p>Vegan</p></div>
-                            <div class="category-button"><p>Christian</p></div>
+                            <div>
+                                <p class="btn btn-primary chosenCategory">Vegan</p>
+                            </div>
+                            <div>
+                                <p class="btn btn-primary chosenCategory">Christian</p>
+                            </div>
                         </div>
                     </div> 
                     <div class="description">
@@ -150,37 +152,12 @@
                         </div>
                     </div>              
                 </div>
-
-                <div class="container">
-                    <div class="match-unmatch">
-                        <div class="button">
-                            <a href = #><p class="button-text">unmatch</p></a>
-                        </div>
-                        <div class="button"><a href = #><p class="button-text">match</p></a></div>
-                    </div>
-                    <div class="image-container-1"></div>      
-                    <div class="description">
-                        <p class="title">Profile</p>
-                        <p>Jane, 25</p>
-                        <p> IT Project Manager at Google</p>
-                        <p>Deakin University, 2022</p>
-                    </div> 
-                    <div class="description">
-                        <div><p class="title">Category</p></div>
-                        <div class="category">
-                            <div class="category-button"><p>Vegan</p></div>
-                            <div class="category-button"><p>Christian</p></div>
-                        </div>
-                    </div> 
-                    <div class="description">
-                        <div><p class="title">Prompts</p></div>
-                        <div class="prompts">
-                            <p> Weird things to do..</p>
-                            <p>"Dancing in the middle of the street"</p>
-                        </div>
-                    </div>              
-                </div>
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
     </body>
 </html>
