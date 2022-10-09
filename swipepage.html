@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .flex-container > div {
+                background-color: #faf8f8;
+                margin: 20px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .outer-container{
+                justify-content: center;
+                margin: 50px;
+            }
+            .image-container{
+                width: 300px;
+                height: 300px;
+                background-image: url("photos.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                justify-content: center;
+                margin: 30px;
+            }
+            .content{
+                justify-items: center;
+            }
+
+            .container{
+                justify-items: center;
+                margin: 10px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .description{
+                text-align: left;
+                margin: 30px;
+            }
+            .category{
+                flex-direction: row;
+                display: flex;
+            }
+            .category-button{
+                border-radius: 30px;
+                border-width: 1px;
+                border-color: #F86400;
+                background-color: white;
+                margin-right: 15px;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-style: solid;
+
+            }
+            .title{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .prompts{
+                background-color: #FFD6C9;
+                padding: 15px;
+                border-radius: 20px;
+                line-height: 5px;
+
+            }
+            .image-container-1{
+                width: 300px;
+                height: 300px;
+                background-image: url("photos1.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                justify-content: center;
+                margin: 30px;
+            }
+            .match-unmatch{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            .button{
+                border-radius: 20px;
+                background-color: #F86400;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            .button-text{
+                color: white;
+            }
+            a:link {
+            text-decoration: none;
+            }
+
+            a:visited {
+            text-decoration: none;
+            }
+
+            a:hover {
+            text-decoration: none;
+            }
+
+            a:active {
+            text-decoration: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class ="outer-container">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="match-unmatch">
+                        <div class="button">
+                            <a href = #><p class="button-text">unmatch</p></a>
+                        </div>
+                        <div class="button"><a href = #><p class="button-text">match</p></a></div>
+                    </div>
+                    <div class="image-container"></div>      
+                    <div class="description">
+                        <p class="title">Profile</p>
+                        <p>John, 22</p>
+                        <p> IT Analyst at Amazon</p>
+                        <p>University of Queensland, 2022</p>
+                    </div> 
+                    <div class="description">
+                        <div><p class="title">Category</p></div>
+                        <div class="category">
+                            <div class="category-button"><p>Vegan</p></div>
+                            <div class="category-button"><p>Christian</p></div>
+                        </div>
+                    </div> 
+                    <div class="description">
+                        <div><p class="title">Prompts</p></div>
+                        <div class="prompts">
+                            <p> Must see movie..</p>
+                            <p>"The wolf of Wall Street"</p>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="container">
+                    <div class="match-unmatch">
+                        <div class="button">
+                            <a href = #><p class="button-text">unmatch</p></a>
+                        </div>
+                        <div class="button"><a href = #><p class="button-text">match</p></a></div>
+                    </div>
+                    <div class="image-container-1"></div>      
+                    <div class="description">
+                        <p class="title">Profile</p>
+                        <p>Jane, 25</p>
+                        <p> IT Project Manager at Google</p>
+                        <p>Deakin University, 2022</p>
+                    </div> 
+                    <div class="description">
+                        <div><p class="title">Category</p></div>
+                        <div class="category">
+                            <div class="category-button"><p>Vegan</p></div>
+                            <div class="category-button"><p>Christian</p></div>
+                        </div>
+                    </div> 
+                    <div class="description">
+                        <div><p class="title">Prompts</p></div>
+                        <div class="prompts">
+                            <p> Weird things to do..</p>
+                            <p>"Dancing in the middle of the street"</p>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
