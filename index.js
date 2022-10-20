@@ -2,12 +2,40 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("input");
   inputField.addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
+      blurImage();
       let input = inputField.value;
       inputField.value = "";
       output(input);
     }
   });
 });
+
+/**
+ * This function blurs the image of the person
+ */
+function blurImage(){
+  if(document.getElementById("1") != null){
+    document.getElementById("1").src = "./60 percent blur.png";
+    document.getElementById("1").setAttribute("id", "2");
+  }
+  else if(document.getElementById("2") != null){
+    document.getElementById("2").src = "./40 percent blur.png";
+    document.getElementById("2").setAttribute("id", "3");
+  }
+  else if(document.getElementById("3") != null){
+    document.getElementById("3").src = "./20 percent blur.png";
+    document.getElementById("3").setAttribute("id", "4");
+  }
+  else if(document.getElementById("4") != null){
+    document.getElementById("4").src = "./10 percent blur.png";
+    document.getElementById("4").setAttribute("id", "5");
+  }
+  else if(document.getElementById("5") != null){
+    document.getElementById("5").src = "./bot.png";
+    document.getElementById("5").setAttribute("id", "6");
+  }
+
+}
 
 function output(input) {
   let product;

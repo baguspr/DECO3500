@@ -24,7 +24,12 @@ const prompts = [
   ["what", "why", "how", "where", "when"],
   ["no","not sure","maybe","no thanks"],
   [""],
-  ["haha","ha","lol","hehe","funny","joke"]
+  ["haha","ha","lol","hehe","funny","joke"],
+  ["hello how are you"],
+  ["i see that youre from uq what is your major"],
+  ["wow so cool sounds tough im in my third year taking ux design haha"],
+  ["im taking deco deco infs and deco"],
+  ["yes sure"]
 ]
 
 // Possible responses, in corresponding order
@@ -57,7 +62,12 @@ const replies = [
   ["Great question"],
   ["That's ok","I understand","What do you want to talk about?"],
   ["Please say something :("],
-  ["Haha!","Good one!"]
+  ["Haha!","Good one!"],
+  ["I'm fine, thank you!"],
+  ["I just graduated this year, got a bachelor degree in Computer Science, majoring in data science. And you?"],
+  ["Hahaa it's easier than you'd expect lol. UXD is IT right? Not CS? What courses are you taking right now?"],
+  ["Oh! You are doing 4 courses at the moment, must be having a ton of workloads! You wanna meet up in person? It would be great if we can get to know each other a bit more?"],
+  ["Looking forward to that :)"]
 ]
 
 // Random for any other user input
